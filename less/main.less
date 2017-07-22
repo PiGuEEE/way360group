@@ -1,0 +1,52 @@
+@import 'mixins.less';
+@import 'reset.less';
+@import 'animations.less';
+body{
+}
+.wordsContainer{
+	.dim(800px, 500px);
+	top: 200px;
+	background-color: #CCC;
+	.row{
+		.dim(40px);
+		.fleft();
+	}
+	.found{
+		.transition(.1s);
+		background-color: #B31A8D;
+		color: #FFF !important;
+	}
+	.char{
+		margin: 0;
+		padding: 10px;
+		font-size: 1.4em;
+		font-weight: bold;
+		color: #222;
+		text-align: center;
+		transform-origin: center center;
+		animation: loading 2s ease-out;
+	}
+	.charReverse{
+		animation: loadingreverse 1s ease-out;
+	}
+
+
+
+}
+
+@keyframes loading{
+	0%{
+		transform: translateX( 0% ) rotateY( -1500deg );
+	}	
+	100%{
+		transform: translateX( 0% ) rotateY( 0 );
+	}
+}
+@keyframes loadingreverse{
+	0%{
+		transform: translateX( 0 ) rotateY( 1700deg );
+	}	
+	100%{
+		transform: translateX( 0% ) rotateY( 0 );
+	}
+}
