@@ -2,11 +2,208 @@
 @import 'reset.less';
 @import 'animations.less';
 body{
+	.noto();
+	background-image: url(../svg/hideout.svg);
+	background-size: 2%;
+}
+.header{
+	.dim(93%, 50px);
+	.absolute();
+	.box-sizing();
+	margin-top: 50px;
+	z-index: 99;
+	left: 0;
+	right: 0;
+	.menu{
+		.box-sizing();
+		.fright();
+		.menuBtn{
+			.reglo();
+			.relative();
+			font-size: 1.4em;
+			color: #EEE;
+			margin-right: 50px;
+			&:before{
+				.dim(10%, 10px);
+				.absolute();
+				.iblock();
+				.opacity(0);
+				left: -5px;
+				bottom: 2px;
+				z-index: -1;
+				background-color: #E500AE;
+				content: ' ';
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+			&:hover, &:active{
+				color: #FFF;
+				&:before{
+					.dim(110%, 10px);
+					.transition(.15s);
+					.opacity(1);
+				}
+			}
+		}
+	}
+}
+.firstSection{
+	.dim(100%, 100%);
+	.relative();
+	.box-sizing();
+	//.box-shadow(10px 10px 40px 15px rgba(0, 0, 0, 0.4));
+	background-color: #010101;
+	background-image: url(../svg/blackBg.svg);
+	background-size: 4%;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 40px;
+	.logoShadow1{
+		.dim(800px, 600px);
+		.absolute();
+		.opacity(.02);
+		top: 50%;
+		margin-top: -300px;
+		left: 50%;
+		margin-left: -400px;
+		background-image: url(../svg/borders.svg);
+		background-position: 50% 50%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.logoShadow2{
+		.dim(400px, 300px);
+		.absolute();
+		.opacity(.04);
+		top: 50%;
+		margin-top: -150px;
+		left: 50%;
+		margin-left: -200px;
+		background-image: url(../svg/borders.svg);
+		background-position: 50% 50%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.logo{
+		.dim(200px, 150px);
+		.absolute();
+		top: 50%;
+		margin-top: -75px;
+		left: 50%;
+		margin-left: -100px;
+		background-image: url(../svg/logo-white.svg);
+		background-position: 50% 50%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.titlesBox{
+		display: none;
+		.absolute();
+		left: 60px;
+		bottom: 130px;
+		.logo{
+			.dim(150px, 110px);
+			margin-bottom: 30px;
+			background-image: url(../svg/logo-white.svg);
+			background-position: 50% 50%;
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+		.weAre{
+			.relative();
+			font-size: 4em;
+			color: #FFF;
+			margin-bottom: 10px;
+			color: #FFF;
+			z-index: 5;
+			&:before{
+				.absolute();
+				right: -4px;
+				top: 4px;
+				z-index: -1;
+				color: #111;
+				content: 'We are the Way360 Group';
+			}
+		}
+		.weAreHere{
+			.noto();
+			font-size: 1.3em;
+			font-weight: lighter;
+			margin-bottom: 30px;
+			color: #EEE;
+		}
+		.socialIcons{
+			.dim(100%, 40px);
+			.socialBtn{
+				.dim(34px, 34px);
+				.fleft();
+				.transition(.1s);
+				background-size: 100%;
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+				margin-right: 20px;
+				&:hover, &:active{
+					.scale(.9);
+					.transition(.1s);
+				}
+			}
+			.facebook{
+				background-image: url(../svg/facebook-way360.svg);
+			}
+			.instagram{
+				background-image: url(../svg/instagram-way360.svg);
+			}
+		}
+	}
+	.meerkatsBox{
+		.dim(310px, 500px);
+		.absolute();
+		right: 50px;
+		bottom: -120px;
+		.meerkats{
+			.dim(280px, 360px);
+			.absolute();
+			z-index: 9;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-image: url(../img/meerkats.png);
+			background-size: 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+		}
+		.globe{
+			.dim(300px, 300px);
+			.absolute();
+			left: 0;
+			right: 0;
+			bottom: 0;
+			animation: rotateglobe 60s infinite;
+			background-image: url(../img/globe.png);
+			background-size: 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}
+		.stripes{
+			.dim(300px, 300px);
+			.absolute();
+			animation: rotatestripes 60s infinite;
+			background-image: url(../img/stripes.png);
+			z-index: 5;
+			bottom: 0;
+			background-size: 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+		}
+	}
 }
 .wordsContainer{
-	.dim(800px, 500px);
+	width: 640px;
+	height: 500px;
+	margin: 0 auto;
 	top: 200px;
-	background-color: #CCC;
 	.row{
 		.dim(40px);
 		.fleft();
@@ -29,9 +226,6 @@ body{
 	.charReverse{
 		animation: loadingreverse 1s ease-out;
 	}
-
-
-
 }
 
 @keyframes loading{
@@ -48,5 +242,21 @@ body{
 	}	
 	100%{
 		transform: translateX( 0% ) rotateY( 0 );
+	}
+}
+@keyframes rotatestripes{
+	0%{
+		.rotate(0);
+	}	
+	100%{
+		.rotate(-360deg);
+	}
+}
+@keyframes rotateglobe{
+	0%{
+		.rotate(0);
+	}	
+	100%{
+		.rotate(360deg);
 	}
 }

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'regloregular';
+  src: url('../fonts/reglo.otf') format('otf');
+  src: url('../fonts/reglo.woff2') format('woff2'), url('../fonts/reglo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body,
 html {
   height: 100%;
@@ -13,14 +20,8 @@ footer,
 figure,
 article,
 div,
-nav,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+p,
+span {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -34,16 +35,24 @@ p {
   font-weight: 400;
   color: #666;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'regloregular';
+  margin: 0;
+  padding: 0;
+}
 a:hover,
 a:active {
   cursor: pointer;
-}
-h1 {
-  font-size: 2em;
-}
-h2 {
-  font-size: 1.5em;
-  color: #082F3E;
 }
 input,
 textarea {
@@ -89,8 +98,8 @@ input[type=submit] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }

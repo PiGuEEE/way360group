@@ -3,7 +3,7 @@ body, html{
 	height: 100%;
 	font-size: 14px;
 }
-body, a, li, ul, canvas, header, footer, figure, article, div, nav, h1, h2, h3, h4, h5, h6, p{
+body, a, li, ul, canvas, header, footer, figure, article, div, p, span{
     .box-sizing();
     margin: 0;
     list-style: none;
@@ -14,15 +14,14 @@ body, a, li, ul, canvas, header, footer, figure, article, div, nav, h1, h2, h3, 
     font-weight: 400;
     color: #666;
 }
-
+h1, h2, h3, h4, h5, h6, nav{
+	.box-sizing();
+	.reglo();
+	margin: 0;
+	padding: 0;
+}
 a{ &:hover, &:active{ cursor: pointer; } }
-h1{
-	font-size: 2em;
-}
-h2{
-	font-size: 1.5em;
-	color: #082F3E;
-}
+
 input, textarea{
 	outline: none;
 	border: 1px solid #F9F9F9;
@@ -52,8 +51,8 @@ input[type=submit]{
 	.relative();
 	.clr();
 	.box-sizing();
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	max-width: 1200px;
 	margin: 0 auto;
 }

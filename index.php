@@ -1,11 +1,40 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<header class="header">
+		<nav class="menu">
+			<a href="#" class="menuBtn" title="About the Way360 Group">ABOUT US</a>
+			<a href="#" class="menuBtn" title="What is Corporate Social Responsibility?">WHAT IS CSR?</a>
+			<a href="#" class="menuBtn" title="What the Way360 Group does?">WHAT WE DO</a>
+			<a href="#" class="menuBtn" title="Contact us">CONTACT</a>
+		</nav>
 	</header>
+	<section class="firstSection">
+			<div class="logoShadow1"></div>
+			<div class="logoShadow2"></div>
+			<div class="logo"></div>
+		<div class="titlesBox">
+			<div class="logo"></div>
+			<h1 class="weAre">We are the Way360 Group</h1>
+			<h2 class="weAreHere">And we’re here to help your business get more social.</h2>
+			<div class="socialIcons">
+				<a href="#" class="socialBtn facebook"></a>
+				<a href="#" class="socialBtn instagram"></a>
+			</div>
+		</div>
+		<div class="meerkatsBox">
+			<div class="meerkats"></div>
+			<div class="globe"></div>
+			<div class="stripes"></div>
+		</div>
+		<div class="ellipsis">
+			<div class="ellipse"></div>
+		</div>
+	</section>
 	<div class="container">
 		<div class="wordsContainer">
 			<div class="row 1">

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'regloregular';
+  src: url('../fonts/reglo.otf') format('otf');
+  src: url('../fonts/reglo.woff2') format('woff2'), url('../fonts/reglo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
