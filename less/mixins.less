@@ -81,6 +81,10 @@
 	box-shadow: @arguments;
 	.pie();
 }
+.blur(@value){
+    filter: blur(@value);
+    -webkit-filter: blur(@value);
+}
 .box-sizing(@sizing: border-box) {
 	-ms-box-sizing: @sizing;
 	-moz-box-sizing: @sizing;

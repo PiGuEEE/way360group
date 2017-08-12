@@ -64,7 +64,6 @@ textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 14px;
-  font-weight: 300;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -93,13 +92,10 @@ input[type=submit] {
 .container {
   height: auto;
   width: 100%;
-  position: relative;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 30px;
-  padding-right: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
