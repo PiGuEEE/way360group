@@ -70,6 +70,8 @@ $(document).ready(function() {
 		 
 	});
 
+
+
 	$(window).scroll(function(){
 
 		var height1 = $('.firstSection').height();
@@ -91,6 +93,10 @@ $(document).ready(function() {
 
 	});
 
+	var menuOverlay = $('.headerOverlay');
+	if (menuOverlay.hasClass('.active')) {
+		$('.headerBtn .line').css({ 'background-color' : '#FFF' });
+	};
 
 
 

@@ -2827,6 +2827,9 @@ body {
     text-align: center;
     padding: 0;
   }
+  .headerOverlay .menu .menuBtnBox .menuBtn .line {
+    background-color: #FFF !important;
+  }
   .headerOverlay .meerkatsBox {
     display: none;
   }
@@ -2837,5 +2840,8 @@ body {
     margin: 0 auto;
     float: none;
     margin-top: 27%;
+  }
+  .headerOverlay .menu .menuBtn .line {
+    background-color: #FFF !important;
   }
 }
