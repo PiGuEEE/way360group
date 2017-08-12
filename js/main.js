@@ -71,7 +71,7 @@ $(document).ready(function() {
 	});
 
 
-
+	// apply colour to menu button as user scroll
 	$(window).scroll(function(){
 
 		var height1 = $('.firstSection').height();
