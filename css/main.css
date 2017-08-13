@@ -2833,6 +2833,24 @@ body {
     display: none;
   }
 }
+@media only screen and (max-device-width: 900px) {
+  .contact .formContainer {
+    float: none;
+    margin: 0 auto;
+  }
+  .contact .formContainer .llamaContainer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contact .formContainer {
+    float: none;
+    margin: 0 auto;
+  }
+  .contact .formContainer .llamaContainer {
+    display: none;
+  }
+}
 @media only screen and (max-width: 750px) {
   .headerOverlay .logo {
     position: absolute;
@@ -2858,6 +2876,20 @@ body {
   }
   .headerOverlay .meerkatsBox {
     display: none;
+  }
+  .sectionTitle {
+    width: 90%;
+    font-size: 7em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact .formContainer {
+    margin-top: 50px;
+  }
+  .contact .formContainer .submit {
+    height: 100px;
+    width: 100%;
+    text-align: center;
   }
   .firstSection .titlesBox .weAreBox .weAre {
     font-size: 4.5em;
@@ -2924,6 +2956,82 @@ body {
   .firstSection .titlesBox .weAreHere {
     font-size: 3.5em;
     margin-top: 120px;
+  }
+  .sectionTitle {
+    width: 90%;
+    font-size: 7em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact .formContainer {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    margin-top: 50px;
+  }
+  .contact .formContainer .inputContainer {
+    margin-bottom: 80px;
+  }
+  .contact .formContainer .inputContainer .input {
+    height: 80px;
+  }
+  .contact .formContainer .inputContainer .textarea {
+    height: 200px;
+  }
+  .contact .formContainer .inputContainer:last-child {
+    margin-bottom: 20px !important;
+  }
+  .contact .formContainer .submit {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer {
+    min-height: 550px;
+  }
+  .footer:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .footer .meerkatsBox {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    bottom: -360px;
+  }
+  .footer .logo {
+    height: 90px;
+    width: 120px;
+  }
+  .footer .copyright {
+    height: auto;
+    width: 100%;
+    margin-top: 130px;
+    font-size: 2.3em;
+    text-align: center;
+  }
+  .footer .socialMedias {
+    height: auto;
+    width: 170px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 230px;
+  }
+  .footer .socialMedias .socialBtn {
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+  }
+  .footer .socialMedias .socialBtn:last-child {
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 550px) {

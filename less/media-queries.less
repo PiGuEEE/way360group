@@ -1,0 +1,307 @@
+@import 'mixins.less';
+
+@media only screen and (max-device-width : 1000px){
+	.firstSection{
+		.titlesBox{
+			.weAreBox{
+				.weAre{
+					font-size: 5.5em;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width : 1000px){
+	.firstSection{
+		.titlesBox{
+			.weAreBox{
+				.weAre{
+					font-size: 5.5em;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width : 950px){
+	.headerBtn{
+		.dim(100px, 100px);
+		.line{
+			height: 9px !important;
+			margin-top: 22px;
+		}
+	}
+	.headerOverlay{
+		.logo{
+			.absolute();
+			top: 30px;
+			left: 30px;
+		}
+		.menu{
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 20%;
+			float: none;
+			.menuBtnBox{
+				text-align: center;
+				.menuBtn{
+					width: 100%;
+					text-align: center;
+					font-size: 7em;
+					padding: 0;
+				}
+			}
+		}
+		.meerkatsBox{
+			display: none;
+		}
+	}
+	.firstSection{
+		.videoBox{
+			.playBtn{
+				bottom: 10px;
+			}
+		}
+		.socialIcons{
+			display: none;
+		}
+	}
+}
+@media only screen and (max-width : 950px){
+	.firstSection{
+		.videoBox{
+			.playBtn{
+				bottom: 10px;
+			}
+		}
+		.titlesBox{
+			.weAreBox{
+				.weAre{
+					font-size: 5.7em;
+				}
+			}
+		}
+		.socialIcons{
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-device-width : 900px){
+	.contact{
+		.formContainer{
+			float: none;
+			margin: 0 auto;
+			.llamaContainer{
+				display: none;
+			}
+		}
+	}
+}
+@media only screen and (max-width : 900px){
+	.contact{
+		.formContainer{
+			float: none;
+			margin: 0 auto;
+			.llamaContainer{
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 750px){
+	.headerOverlay{
+		.logo{
+			.absolute();
+			top: 20px;
+			left: 20px;
+		}
+		.menu{
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 20%;
+			float: none;
+			.menuBtnBox{
+				text-align: center;
+				.menuBtn{
+					width: 100%;
+					text-align: center;
+					padding: 0;
+					.line{
+						background-color: #FFF !important;
+					}
+				}
+			}
+		}
+		.meerkatsBox{
+			display: none;
+		}
+	}
+	.sectionTitle{
+		width: 90%;
+		font-size: 7em;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.contact{
+		.formContainer{
+			margin-top: 50px;
+			.submit{
+				.dim(100%, 100px);
+				text-align: center;
+			}
+		}
+	}
+	.firstSection{
+		.titlesBox{
+			.weAreBox{
+				.weAre{
+					font-size: 4.5em;
+				}
+			}
+		}
+		.videoBox{
+			.playBtn{
+				bottom: 10px;
+			}
+		}
+	}
+}
+@media only screen and (max-device-width : 750px){
+	.headerOverlay{
+		.logo{
+			.absolute();
+			top: 20px;
+			left: 20px;
+		}
+		.menu{
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 20%;
+			float: none;
+			.menuBtnBox{
+				text-align: center;
+				.menuBtn{
+					width: 100%;
+					text-align: center;
+					padding: 0;
+					.line{
+						background-color: #FFF !important;
+					}
+				}
+			}
+		}
+		.meerkatsBox{
+			display: none;
+		}
+	}
+	.firstSection{
+		.videoBox{
+			.dim(100%, 550px);
+			.video{
+				.dim(80%, 700px);
+				margin-top: 50px;
+			}
+			.playBtn{
+				.absolute();
+				.scale(3);
+				bottom: -630px;
+			}
+		}
+		.meerkatsBox{
+			.scale(1.2);
+			top: 90px;
+		}
+		.titlesBox{
+			.weAreBox{
+				.weAre{
+					font-size: 12em;
+				}
+			}
+			.weAreHere{
+				font-size: 3.5em;
+				margin-top: 120px;
+			}
+		}
+	}
+	.sectionTitle{
+		width: 90%;
+		font-size: 7em;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.contact{
+		width: 80%;
+		margin: 0 auto;
+		.formContainer{
+			width: 100%;
+			margin: 0 auto;
+			font-size: 2em;
+			margin-top: 50px;
+			.inputContainer{
+				margin-bottom: 80px;
+				.input{
+					height: 80px;
+				}
+				.textarea{
+					height: 200px;
+				}
+				&:last-child{
+					margin-bottom: 20px !important;
+				}
+			}
+			.submit{
+				.dim(100%, 100px);
+				text-align: center;
+			}
+		}
+	}
+	.footer{
+		min-height: 550px;
+		.clr();
+		.meerkatsBox{
+			.scale(1.2);
+			bottom: -360px;
+		}
+		.logo{
+			.dim(120px, 90px);
+		}
+		.copyright{
+			.dim(100%);
+			margin-top: 130px;
+			font-size: 2.3em;
+			text-align: center;
+		}
+		.socialMedias{
+			.dim(170px);
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top: 230px;
+			.socialBtn{
+				.dim(75px, 75px);
+				margin-right: 20px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 550px){
+	.headerOverlay{
+		.menu{
+			.relative();
+			margin: 0 auto;
+			float: none;
+			margin-top: 27%;
+			.menuBtn{
+				.line{
+					background-color: #FFF !important;
+				}
+			}
+		}
+	}
+}
