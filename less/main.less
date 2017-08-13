@@ -212,7 +212,6 @@ body{
 		}
 	}
 }
-
 .menuActive{
 	.opacity(1);
 	visibility: visible;
@@ -235,7 +234,6 @@ body{
 		}
 	}
 }
-
 .darkFirstSection{
 	.transition(.6s);
 	background-color: rgba(0, 0, 0, 0.98);
@@ -821,13 +819,21 @@ body{
 				background: none;
 				padding: 0;
 				outline: none;
-				// &:focus ~ label, &:valid ~ label{
-					
-				// 	.transition(.3s);
-				// 	top: -20px;
-				// 	font-size: 1em;
-				// 	color: #528FA8;
-				// }
+				&:focus ~ label, &:valid ~ label, &:invalid ~ label{
+					.transition(.3s);
+					top: -20px;
+					font-size: 1em;
+					color: #528FA8;
+				}
+				&:empty ~ label{
+					.absolute();
+					.reglo();
+					.transition(.3s);
+					color: #666;
+					top: 0px;
+					font-size: 1.5em;
+					pointer-events: none;
+				}
 			}
 			.textarea{
 				.dim(100%, 130px);
@@ -949,47 +955,6 @@ body{
 }
 .instagram{
 	background-image: url(../svg/social-media-instagram.svg);
-}
-
-@keyframes loading{
-	0%{
-		transform: translateX( 0% ) rotateY( -1500deg );
-	}	
-	100%{
-		transform: translateX( 0% ) rotateY( 0 );
-	}
-}
-@keyframes blurout{
-	0%{
-		.blur(0);
-	}	
-	100%{
-		.blur(30px);
-	}
-}
-@keyframes loadingreverse{
-	0%{
-		transform: translateX( 0 ) rotateY( 1700deg );
-	}	
-	100%{
-		transform: translateX( 0% ) rotateY( 0 );
-	}
-}
-@keyframes rotatestripes{
-	0%{
-		.rotate(0);
-	}	
-	100%{
-		.rotate(-360deg);
-	}
-}
-@keyframes rotateglobe{
-	0%{
-		.rotate(0);
-	}	
-	100%{
-		.rotate(360deg);
-	}
 }
 
 @import 'media-queries.less';

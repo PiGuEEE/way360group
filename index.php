@@ -120,6 +120,7 @@
 					<p class="char">P</p>
 					<p class="char charReverse">S</p>
 				</div>
+			    
 				<div class="row 3">
 					<p class="char charReverse">U</p>
 					<p class="char">P</p>
@@ -277,6 +278,20 @@
 				<div class="floatingLlama"></div>
 				<div class="wordsContainerBg"></div>
 			</div>
+			<div class="wordsMobile">
+				<div class=""></div>
+			</div>
+		</div>
+		<div class="wordsMobile">
+			<div class="word1">
+				
+			</div>
+			<div class="word2">
+				
+			</div>
+			<div class="word3">
+				
+			</div>
 		</div>
 	</section>
 	
@@ -331,6 +346,7 @@
 				</form>
 			</div>
 		</div>
+		
 	</section>
 
 	<footer class="footer">
