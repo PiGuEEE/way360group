@@ -26,12 +26,12 @@
 
 <!-- facebook tags -->
 <meta property="og:description" content="">
-<meta property="og:image" content="">
+<meta property="og:image" content="https://www.way360group.com/social/social-facebook-squared.png">
 <meta property="og:locale:alternate" content="en_AU">
 <meta property="og:title" content="Way360 Group - A Better World is just a Smile Away">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Way360 Group">
-<meta property="og:url" content="https://www.way360group.com">
+<meta property="og:url" content="http://www.way360group.com">
 
 <!-- twitter -->
 <meta name="twitter:card" content="summary">
