@@ -1274,7 +1274,6 @@ body {
   -o-transform: scale(0.85);
   -ms-transform: scale(0.85);
   transform: scale(0.85);
-  z-index: 9;
   right: 60px;
   top: 70px;
   background-image: url(../img/monkey.png);
@@ -1284,6 +1283,7 @@ body {
   height: 500px;
   width: 45%;
   float: left;
+  z-index: 99;
 }
 .projects .latestBig:after {
   content: " ";
