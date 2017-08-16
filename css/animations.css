@@ -63,3 +63,72 @@
     transform: rotateZ(360deg);
   }
 }
+@keyframes allfoundone {
+  0% {
+    background-color: #b31a8d;
+  }
+  20% {
+    background-color: rgba(179, 26, 141, 0.5);
+  }
+  40% {
+    background-color: #b31a8d;
+  }
+  60% {
+    background-color: rgba(179, 26, 141, 0.5);
+  }
+  80% {
+    background-color: #b31a8d;
+  }
+  80% {
+    background-color: rgba(179, 26, 141, 0.5);
+  }
+  100% {
+    background-color: #b31a8d;
+  }
+}
+@keyframes allfoundtwo {
+  0% {
+    background-color: #efe633;
+  }
+  20% {
+    background-color: rgba(239, 230, 51, 0.5);
+  }
+  40% {
+    background-color: #efe633;
+  }
+  60% {
+    background-color: rgba(239, 230, 51, 0.5);
+  }
+  80% {
+    background-color: #efe633;
+  }
+  80% {
+    background-color: rgba(239, 230, 51, 0.5);
+  }
+  100% {
+    background-color: #efe633;
+  }
+}
+@keyframes allfoundthree {
+  0% {
+    background-color: #60a0b6;
+  }
+  20% {
+    background-color: rgba(96, 160, 182, 0.5);
+  }
+  40% {
+    background-color: #60a0b6;
+  }
+  60% {
+    background-color: rgba(96, 160, 182, 0.5);
+  }
+  80% {
+    background-color: #60a0b6;
+  }
+  80% {
+    background-color: rgba(96, 160, 182, 0.5);
+  }
+  100% {
+    background-color: #60a0b6;
+  }
+}

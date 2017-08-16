@@ -5,6 +5,26 @@
   font-weight: normal;
   font-style: normal;
 }
+@media only screen and (max-device-width: 1280px) {
+  .container {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .container {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media only screen and (max-device-width: 1000px) {
   .firstSection .titlesBox .weAreBox .weAre {
     font-size: 5.5em;
@@ -81,6 +101,46 @@
   }
   .contact .formContainer .llamaContainer {
     display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .projects .latestBig {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+  .projects .latestBig:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .projects .latestBig:first-child {
+    margin-right: 0;
+  }
+  .projects .latestBig .video {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .projects .latestBig {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 100px;
+  }
+  .projects .latestBig:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .projects .latestBig .videoBox {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -264,6 +324,30 @@
   }
   .footer .socialMedias .socialBtn:last-child {
     margin-right: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .wordsGame .sectionTitle {
+    text-align: center;
+    padding: 0;
+  }
+  .wordsGame .container {
+    display: none;
+  }
+  .wordsGame .wordsMobile {
+    display: block;
+  }
+}
+@media only screen and (max-device-width: 700px) {
+  .wordsGame .sectionTitle {
+    text-align: center;
+    padding: 0;
+  }
+  .wordsGame .container {
+    display: none;
+  }
+  .wordsGame .wordsMobile {
+    display: block;
   }
 }
 @media only screen and (max-width: 550px) {

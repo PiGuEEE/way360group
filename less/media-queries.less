@@ -1,5 +1,20 @@
 @import 'mixins.less';
 
+@media only screen and (max-device-width : 1280px){
+	.container{
+		.box-sizing();
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media only screen and (max-width : 1280px){
+	.container{
+		.box-sizing();
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 @media only screen and (max-device-width : 1000px){
 	.firstSection{
 		.titlesBox{
@@ -109,7 +124,36 @@
 		}
 	}
 }
-
+@media only screen and (max-width : 850px){
+	.projects{
+		.latestBig{
+			.dim(100%);
+			.clr();
+			margin: 0 auto;
+			float: none;
+			&:first-child{ margin-right: 0; }
+			.video{
+				.dim(90%);
+				margin: 0 auto;
+			}
+		}
+	}
+}
+@media only screen and (max-width : 850px){
+	.projects{
+		.latestBig{
+			.dim(100%);
+			.clr();
+			margin: 0 auto;
+			float: none;
+			margin-bottom: 100px;
+			.videoBox{
+				.dim(90%);
+				margin: 0 auto;
+			}
+		}
+	}
+}
 @media only screen and (max-width : 750px){
 	.headerOverlay{
 		.logo{
@@ -290,6 +334,34 @@
 	}
 }
 
+@media only screen and (max-width : 700px){
+	.wordsGame{
+		.sectionTitle{
+			text-align: center;
+			padding: 0;
+		}
+		.container{
+			display: none;
+		}
+		.wordsMobile{
+			display: block;
+		}
+	}
+}
+@media only screen and (max-device-width : 700px){
+	.wordsGame{
+		.sectionTitle{
+			text-align: center;
+			padding: 0;
+		}
+		.container{
+			display: none;
+		}
+		.wordsMobile{
+			display: block;
+		}
+	}
+}
 @media only screen and (max-width : 550px){
 	.headerOverlay{
 		.menu{
