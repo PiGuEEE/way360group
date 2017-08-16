@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<?php include('include/head.php'); ?>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -21,28 +22,7 @@
 		<div class="line line3"></div>
 	</div>
 
-	<header class="headerOverlay">
-		<div class="logo"></div>
-		<nav class="menu">
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="About the Way360 Group"><p>ABOUT US</p></a>
-			</div>
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="What is Corporate Social Responsibility?"><p>WHAT IS CSR?</p></a>
-			</div>
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="Latest Projects"><p>LATEST PROJECTS</p></a>
-			</div>
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="Contact us"><p>CONTACT</p></a>
-			</div>
-		</nav>
-		<div class="meerkatsBox">
-			<div class="meerkats"></div>
-			<div class="globe"></div>
-			<div class="stripes"></div>
-		</div>
-	</header>
+	<?php include('include/menu.php'); ?>
 
 	<section class="firstSection">
 		<div class="logo"></div>
