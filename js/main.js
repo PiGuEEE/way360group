@@ -3,14 +3,16 @@ $(document).ready(function() {
 	
 	// FINDING WORDS TRIGGER EFFECT
 
-		$('.word').hover(function(){
-			var allwords2 = $('.word').length;
-			var founds2 = $('.found').length + 1;
+		$('.word1').hover(function(){
+			var allwords = $('.word1').length;
+			var founds = $('.found1').length + 1;
+			console.log(allwords);
+			console.log(founds);
 
-			$(this).addClass('found');
+			$(this).addClass('found1');
 
-			if (allwords2 == founds2) {
-				$('.found').addClass('allfound1');
+			if (allwords == founds) {
+				$('.found1').addClass('allfound1');
 			}
 
 		});

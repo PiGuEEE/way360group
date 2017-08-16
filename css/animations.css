@@ -132,3 +132,31 @@
     background-color: #60a0b6;
   }
 }
+@keyframes changedarkbg {
+  0% {
+    background-color: #111;
+  }
+  35% {
+    background-color: #000;
+  }
+  70% {
+    background-color: #222;
+  }
+  100% {
+    background-color: #111;
+  }
+}
+@keyframes changebgcolour {
+  0% {
+    background-color: #B20099;
+  }
+  35% {
+    background-color: #EFE633;
+  }
+  70% {
+    background-color: #60A0B6;
+  }
+  100% {
+    background-color: #B20099;
+  }
+}

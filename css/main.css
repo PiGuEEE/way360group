@@ -231,6 +231,34 @@ input[type=submit] {
     background-color: #60a0b6;
   }
 }
+@keyframes changedarkbg {
+  0% {
+    background-color: #111;
+  }
+  35% {
+    background-color: #000;
+  }
+  70% {
+    background-color: #222;
+  }
+  100% {
+    background-color: #111;
+  }
+}
+@keyframes changebgcolour {
+  0% {
+    background-color: #B20099;
+  }
+  35% {
+    background-color: #EFE633;
+  }
+  70% {
+    background-color: #60A0B6;
+  }
+  100% {
+    background-color: #B20099;
+  }
+}
 body {
   font-family: 'Noto Sans', sans-serif;
   background-image: url(../svg/hideout.svg);
@@ -978,8 +1006,9 @@ body {
   position: relative;
   margin-top: 100px;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 90px;
   background-color: #111;
+  animation: changedarkbg 30s infinite;
 }
 .wordsGame:after {
   content: " ";
@@ -1029,7 +1058,7 @@ body {
   position: relative;
   z-index: 9;
 }
-.wordsGame .wordsContainer .found {
+.wordsGame .wordsContainer .found1 {
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
@@ -1153,6 +1182,68 @@ body {
   padding-right: 15px;
   background-color: #60A0B6;
 }
+.wordsGame .csr {
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.wordsGame .csr p {
+  font-family: 'regloregular';
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.wordsGame .csr p:first-child {
+  font-size: 1.35em;
+  color: #BBB;
+  margin-bottom: 10px;
+}
+.wordsGame .csr p:last-child {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 20px;
+  background-color: #B20099;
+  animation: changebgcolour 30s infinite;
+  font-size: 3em;
+  color: #FFF;
+}
+.wordsGame .csr:hover,
+.wordsGame .csr:active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.wordsGame .csr:hover p,
+.wordsGame .csr:active p {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.wordsGame .csr:hover p:first-child,
+.wordsGame .csr:active p:first-child {
+  color: #FFF;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.wordsGame .csr:hover p:last-child,
+.wordsGame .csr:active p:last-child {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  background-color: #B31A8D;
+}
 .projects {
   height: auto;
   width: 100%;
@@ -1172,7 +1263,7 @@ body {
   margin-bottom: 60px;
   padding-right: 150px;
   text-align: left;
-  font-size: 6em;
+  font-size: 5em;
 }
 .projects .monkey {
   height: 327px;
@@ -1394,8 +1485,7 @@ body {
   background-color: #CCC;
 }
 .contact {
-  height: auto;
-  width: 700px;
+  padding-top: 120px;
   margin: 0 auto;
   right: -50px;
 }
@@ -1404,29 +1494,39 @@ body {
   display: block;
   clear: both;
 }
-.contact .formContainer {
+.contact .sectionTitle {
+  font-size: 5em;
+  text-align: right;
+  padding-right: 40px;
+}
+.contact .sectionContainer {
+  height: auto;
+  width: 700px;
+  margin: 0 auto;
+}
+.contact .sectionContainer .formContainer {
   height: auto;
   width: 450px;
   margin-left: 250px;
   position: relative;
 }
-.contact .formContainer:after {
+.contact .sectionContainer .formContainer:after {
   content: " ";
   display: block;
   clear: both;
 }
-.contact .formContainer .llamaContainer {
+.contact .sectionContainer .formContainer .llamaContainer {
   height: 345px;
   width: 201px;
   position: absolute;
   left: -350px;
 }
-.contact .formContainer .llamaContainer:after {
+.contact .sectionContainer .formContainer .llamaContainer:after {
   content: " ";
   display: block;
   clear: both;
 }
-.contact .formContainer .llamaContainer .llama {
+.contact .sectionContainer .formContainer .llamaContainer .llama {
   height: 345px;
   width: 201px;
   position: absolute;
@@ -1436,28 +1536,28 @@ body {
   background-position: 50% 50%;
   z-index: 9;
 }
-.contact .formContainer .llamaContainer .globe {
+.contact .sectionContainer .formContainer .llamaContainer .globe {
   height: 230px;
   width: 230px;
   bottom: -90px;
   z-index: 1;
 }
-.contact .formContainer .llamaContainer .stripes {
+.contact .sectionContainer .formContainer .llamaContainer .stripes {
   height: 230px;
   width: 230px;
   bottom: -90px;
   z-index: 1;
 }
-.contact .formContainer .inputContainer {
+.contact .sectionContainer .formContainer .inputContainer {
   position: relative;
   margin-bottom: 38px;
 }
-.contact .formContainer .inputContainer:after {
+.contact .sectionContainer .formContainer .inputContainer:after {
   content: " ";
   display: block;
   clear: both;
 }
-.contact .formContainer .inputContainer label {
+.contact .sectionContainer .formContainer .inputContainer label {
   position: absolute;
   font-family: 'regloregular';
   -webkit-transition: all 0.3s ease-in-out;
@@ -1468,7 +1568,7 @@ body {
   font-size: 1.5em;
   pointer-events: none;
 }
-.contact .formContainer .inputContainer .bottomBar {
+.contact .sectionContainer .formContainer .inputContainer .bottomBar {
   height: 4px;
   width: 0%;
   position: absolute;
@@ -1477,7 +1577,7 @@ body {
   margin: 0 auto;
   bottom: -2px;
 }
-.contact .formContainer .inputContainer .input {
+.contact .sectionContainer .formContainer .inputContainer .input {
   height: 40px;
   width: 100%;
   font-family: 'regloregular';
@@ -1488,8 +1588,8 @@ body {
   padding: 0;
   outline: none;
 }
-.contact .formContainer .inputContainer .input:focus ~ label,
-.contact .formContainer .inputContainer .input:valid ~ label {
+.contact .sectionContainer .formContainer .inputContainer .input:focus ~ label,
+.contact .sectionContainer .formContainer .inputContainer .input:valid ~ label {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1498,7 +1598,7 @@ body {
   font-size: 1em;
   color: #528FA8;
 }
-.contact .formContainer .inputContainer .input:empty ~ label {
+.contact .sectionContainer .formContainer .inputContainer .input:empty ~ label {
   position: absolute;
   font-family: 'regloregular';
   -webkit-transition: all 0.3s ease-in-out;
@@ -1511,10 +1611,10 @@ body {
   font-size: 1.5em;
   pointer-events: none;
 }
-.contact .formContainer .inputContainer .input:invalid ~ label {
+.contact .sectionContainer .formContainer .inputContainer .input:invalid ~ label {
   display: none;
 }
-.contact .formContainer .inputContainer .textarea {
+.contact .sectionContainer .formContainer .inputContainer .textarea {
   height: 130px;
   width: 100%;
   font-family: 'regloregular';
@@ -1526,7 +1626,7 @@ body {
   outline: none;
   resize: none;
 }
-.contact .formContainer .inputContainer .textarea:focus ~ .bottomBar {
+.contact .sectionContainer .formContainer .inputContainer .textarea:focus ~ .bottomBar {
   height: 5px;
   width: 100%;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1541,8 +1641,8 @@ body {
   bottom: 3px;
   background-color: #7AD3E8;
 }
-.contact .formContainer .inputContainer .textarea:focus ~ label,
-.contact .formContainer .inputContainer .textarea:valid ~ label {
+.contact .sectionContainer .formContainer .inputContainer .textarea:focus ~ label,
+.contact .sectionContainer .formContainer .inputContainer .textarea:valid ~ label {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1551,7 +1651,7 @@ body {
   font-size: 1em;
   color: #528FA8;
 }
-.contact .formContainer .inputContainer .input:focus ~ .bottomBar {
+.contact .sectionContainer .formContainer .inputContainer .input:focus ~ .bottomBar {
   height: 5px;
   width: 100%;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1566,8 +1666,8 @@ body {
   bottom: -2px;
   background-color: #7AD3E8;
 }
-.contact .formContainer .inputContainer .input:focus ~ label,
-.contact .formContainer .inputContainer .input:valid ~ label {
+.contact .sectionContainer .formContainer .inputContainer .input:focus ~ label,
+.contact .sectionContainer .formContainer .inputContainer .input:valid ~ label {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1576,7 +1676,7 @@ body {
   font-size: 1em;
   color: #528FA8;
 }
-.contact .formContainer .submit {
+.contact .sectionContainer .formContainer .submit {
   height: 40px;
   width: 130px;
   font-family: 'regloregular';
