@@ -1,0 +1,134 @@
+@import 'mixins.less';
+@import 'reset.less';
+@import 'animations.less';
+
+.aboutUs{
+	.dim(100%, 500px);
+	.box-sizing();
+	.transition(.3s);
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 40px;	
+	background-image: url('../img/way360-group-about-us.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	.titlesBox{
+		.dim(100%, 150px);
+		.relative();
+		top: 270px;
+		z-index: 15;
+		text-align: center;
+		.weAreBox{
+			.dim(100%);
+			.clr();
+			.transition(1s);
+			.opacity(1);
+			.scale(1);
+			.blur(0);
+			.relative();
+			top: 0;
+			text-align: center;
+			.weAre{
+				.dim(100%);
+				.relative();
+				.reglo();
+				.blur(0);
+				.transition(1s);
+				.opacity(1);
+				display: inline-table;
+				text-align: center;
+				font-size: 6.2em;
+				color: #FFF;
+				margin-bottom: 10px;
+				z-index: 5;
+			}
+		}
+		.weAreHere{
+			.dim(100%);
+			.noto();
+			.relative();
+			.transition(.3s);
+			.opacity(1);
+			.scale(1);
+			text-align: center;
+			font-size: 1.3em;
+			font-weight: lighter;
+			margin-bottom: 30px;
+			color: #DDD;
+		}
+	}
+	.meerkatsBox{
+		.dim(310px, 500px);
+		.absolute();
+		.scale(.5);
+		left: 50%;
+		top: -50px;
+		margin-left: -155px;
+		.meerkats{
+			.dim(280px, 360px);
+			.absolute();
+			z-index: 9;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-image: url(../img/meerkats.png);
+			background-size: 100%;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+		}
+	}
+}
+.aboutSecond{
+	.relative();
+	.clr();
+	z-index: 99;
+	margin-top: -20px;
+	padding-bottom: 90px;
+	background-color: #111;
+	&:before{
+	  content: '';
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  background: inherit;
+	  z-index: -1;
+	  top: -100px;
+	  left: 0;
+	  transform-origin: left top;
+	  transform: skewY(3deg);
+	}
+	&:after{
+	  content: '';
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  background: inherit;
+	  z-index: -1;
+	  bottom: 0;
+	  transform-origin: left bottom;
+	  transform: skewY(3deg);
+	}
+	.aboutText{
+		.dim(80%);
+		.clr();
+		margin: 0 auto;
+		max-width: 600px;
+		font-size: 1.3em;
+		line-height: 1.7em;
+		h3{
+			font-size: 2.5em;
+			color: #FFF;
+			text-align: center;
+			margin-top: 90px;
+			margin-bottom: 50px;
+		}
+		p{
+			color: #FFF;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+	}
+}
+
+@import 'media-queries.less';

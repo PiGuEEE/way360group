@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<?php include('include/head.php'); ?>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/about-us.css">
 </head>
 <body>
 	<!-- <header class="header">
@@ -16,382 +18,43 @@
 	</header> -->
 
 	<div class="headerBtn">
+		<div class="logo"></div>
 		<div class="line line1"></div>
 		<div class="line line2"></div>
 		<div class="line line3"></div>
 	</div>
 
-	<header class="headerOverlay">
-		<div class="logo"></div>
-		<nav class="menu">
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="About the Way360 Group"><p>ABOUT US</p></a>
-			</div>
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="What is Corporate Social Responsibility?"><p>WHAT IS CSR?</p></a>
-			</div>
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="Latest Projects"><p>LATEST PROJECTS</p></a>
-			</div>
-			<div class="menuBtnBox">
-				<a href="#" class="menuBtn" title="Contact us"><p>CONTACT</p></a>
-			</div>
-		</nav>
-		<div class="meerkatsBox">
-			<div class="meerkats"></div>
-			<div class="globe"></div>
-			<div class="stripes"></div>
-		</div>
-	</header>
+	<?php include('include/menu.php'); ?>
 
-	<section class="firstSection">
-		<div class="logo"></div>
+	<section class="aboutUs firstSection">
 		<div class="titlesBox">
 			<div class="weAreBox">
-				<h1 class="weAre">We are the Way360 Group</h1>
-			<!-- 
-				<span class="weAre">W</span>
-				<span class="weAre">e</span>
-				<span class="space"></span>
-				<span class="weAre">a</span>
-				<span class="weAre">r</span>
-				<span class="weAre">e</span>
-				<span class="space"></span>
-				<span class="weAre">t</span>
-				<span class="weAre">h</span>
-				<span class="weAre">e</span>
-				<span class="space"></span>
-				<span class="weAre">W</span>
-				<span class="weAre">a</span>
-				<span class="weAre">y</span>
-				<span class="weAre">3</span>
-				<span class="weAre">6</span>
-				<span class="weAre">0</span>
-				<span class="space"></span>
-				<span class="weAre">G</span>
-				<span class="weAre">r</span>
-				<span class="weAre">o</span>
-				<span class="weAre">u</span>
-				<span class="weAre">p</span>
-			-->
+				<h1 class="weAre">About Us</h1>
 			</div>
 			<h2 class="weAreHere">And we’re here to help your business get more social.</h2>
 		</div>
-		<!-- <div class="video" style="background-image: url('img/maxresdefault.png');" > -->
-		<div class="videoBox">
-			<div class="video">
-				<iframe width="100%" height="100%" id="video" src="https://www.youtube.com/embed/Ysyey8vwwHY" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="playBtn" id="playBtn">WATCH VIDEO</div>
-		</div>
 		<div class="meerkatsBox">
 			<div class="meerkats"></div>
 			<div class="globe"></div>
 			<div class="stripes"></div>
 		</div>
-		<div class="socialIcons">
-			<a href="#" class="socialBtn facebook"></a>
-			<a href="#" class="socialBtn instagram"></a>
+	</section>
+
+	
+	<section class="aboutSecond secondSection">
+		<div class="aboutText">
+			<p>We are entrepreneurs, researchers, designers, musicians, educators, and so on. We have a broad diversity of backgrounds. And as a result, a very interesting mix of experiences, cultures and the most creative ideas.</p>
+			<p>A network of people who wants to see the change. A group that decided to use all its skills to build a better world. But in a way where everyone wins. A way we like to call the way360.</p>
+			<h3>Our Ways</h3>
+			<p>We are passionate for what we do. The strategic entrepreneur way of thinking geared to build a better world through an innovative methodology.</p>
+			<p>The group operates in the area of Cause Marketing, planning, developing and executing projects and events with two main goals: generating a real social impact and reaching the objectives of the social investing companies.</p>
+			<p>The results are priceless. Thus we create a meaningful brand value for our clients and a return for philanthropic, social and environmental commitments.</p>
 		</div>
 	</section>
 	
-	<section class="wordsGame">
-		<h2 class="sectionTitle">WHAT WE DO</h2>
-		<div class="container">
-			<div class="wordsContainer">
-				<div class="row 1">
-					<p class="char charReverse">H</p>
-					<p class="char">B</p>
-					<p class="char charReverse">C</p>
-					<p class="char">Z</p>
-					<p class="char charReverse">E</p>
-					<p class="char">X</p>
-					<p class="char">A</p>
-					<p class="char">H</p>
-					<p class="char charReverse">L</p>
-				</div>
-				<div class="row 2">
-					<p class="char">J</p>
-					<p class="char charReverse">D</p>
-					<p class="char">B</p>
-					<p class="char charReverse word">C</p>
-					<p class="char">H</p>
-					<p class="char charReverse">R</p>
-					<p class="char">L</p>
-					<p class="char">P</p>
-					<p class="char charReverse">S</p>
-				</div>
-			    
-				<div class="row 3">
-					<p class="char charReverse">U</p>
-					<p class="char">P</p>
-					<p class="char">B</p>
-					<p class="char charReverse word">O</p>
-					<p class="char">D</p>
-					<p class="char word">R</p>
-					<p class="char charReverse">G</p>
-					<p class="char charReverse">A</p>
-					<p class="char">X</p>
-				</div>
-				<div class="row 4">
-					<p class="char">X</p>
-					<p class="char word2">W</p>
-					<p class="char charReverse">H</p>
-					<p class="char charReverse word">R</p>
-					<p class="char word">S</p>
-					<p class="char word">E</p>
-					<p class="char">G</p>
-					<p class="char">P</p>
-					<p class="char charReverse">I</p>
-				</div>
-				<div class="row 5">
-					<p class="char charReverse">B</p>
-					<p class="char charReverse word2">O</p>
-					<p class="char">T</p>
-					<p class="char charReverse word">P</p>
-					<p class="char word">O</p>
-					<p class="char word">S</p>
-					<p class="char charReverse">Q</p>
-					<p class="char">W</p>
-					<p class="char">N</p>
-				</div>
-				<div class="row 6">
-					<p class="char charReverse">F</p>
-					<p class="char charReverse word2">R</p>
-					<p class="char">P</p>
-					<p class="char word">O</p>
-					<p class="char word">C</p>
-					<p class="char charReverse word">P</p>
-					<p class="char">G</p>
-					<p class="char charReverse">V</p>
-					<p class="char">J</p>
-				</div>
-				<div class="row 7">
-					<p class="char">Y</p>
-					<p class="char word2">K</p>
-					<p class="char charReverse">D</p>
-					<p class="char charReverse word">R</p>
-					<p class="char charReverse word">I</p>
-					<p class="char word">O</p>
-					<p class="char">L</p>
-					<p class="char charReverse word3">S</p>
-					<p class="char">W</p>
-				</div>
-				<div class="row 8">
-					<p class="char">Q</p>
-					<p class="char charReverse word2">S</p>
-					<p class="char">F</p>
-					<p class="char word">A</p>
-					<p class="char word">A</p>
-					<p class="char word">N</p>
-					<p class="char charReverse">C</p>
-					<p class="char word3">O</p>
-					<p class="char">U</p>
-				</div>
-				<div class="row 9">
-					<p class="char">A</p>
-					<p class="char word2">H</p>
-					<p class="char charReverse">H</p>
-					<p class="char word charReverse">T</p>
-					<p class="char word">L</p>
-					<p class="char word">S</p>
-					<p class="char">J</p>
-					<p class="char charReverse word3">C</p>
-					<p class="char">M</p>
-				</div>
-				<div class="row 10">
-					<p class="char">T</p>
-					<p class="char word2">O</p>
-					<p class="char charReverse">Y</p>
-					<p class="char word">E</p>
-					<p class="char charReverse">E</p>
-					<p class="char word">I</p>
-					<p class="char">S</p>
-					<p class="char word3">I</p>
-					<p class="char charReverse word3">G</p>
-				</div>
-				<div class="row 11">
-					<p class="char">L</p>
-					<p class="char word2">P</p>
-					<p class="char charReverse">O</p>
-					<p class="char charReverse">W</p>
-					<p class="char">N</p>
-					<p class="char word">B</p>
-					<p class="char">O</p>
-					<p class="char word3">A</p>
-					<p class="char charReverse word3">O</p>
-				</div>
-				<div class="row 12">
-					<p class="char">R</p>
-					<p class="char word2">S</p>
-					<p class="char charReverse">B</p>
-					<p class="char charReverse">N</p>
-					<p class="char">E</p>
-					<p class="char word">I</p>
-					<p class="char">D</p>
-					<p class="char word3">L</p>
-					<p class="char charReverse word3">O</p>
-				</div>
-				<div class="row 13">
-					<p class="char">C</p>
-					<p class="char">A</p>
-					<p class="char charReverse">L</p>
-					<p class="char">P</p>
-					<p class="char charReverse">P</p>
-					<p class="char word">L</p>
-					<p class="char charReverse">A</p>
-					<p class="char">B</p>
-					<p class="char word3">D</p>
-				</div>
-				<div class="row 14">
-					<p class="char">Y</p>
-					<p class="char">L</p>
-					<p class="char">H</p>
-					<p class="char">M</p>
-					<p class="char">A</p>
-					<p class="char word">I</p>
-					<p class="char charReverse">G</p>
-					<p class="char">U</p>
-					<p class="char charReverse">L</p>
-				</div>
-				<div class="row 15">
-					<p class="char charReverse">P</p>
-					<p class="char">A</p>
-					<p class="char charReverse">D</p>
-					<p class="char">E</p>
-					<p class="char">T</p>
-					<p class="char word">T</p>
-					<p class="char">K</p>
-					<p class="char">W</p>
-					<p class="char charReverse">A</p>
-				</div>
-				<div class="row 16">
-					<p class="char">U</p>
-					<p class="char charReverse">W</p>
-					<p class="char">D</p>
-					<p class="char charReverse">O</p>
-					<p class="char charReverse">P</p>
-					<p class="char word">Y</p>
-					<p class="char">A</p>
-					<p class="char">H</p>
-					<p class="char charReverse">M</p>
-				</div>
-				<div class="floatingLlama"></div>
-				<div class="wordsContainerBg"></div>
-			</div>
-			<div class="wordsMobile">
-				<div class=""></div>
-			</div>
-		</div>
-		<div class="wordsMobile">
-			<div class="word word1">
-				<p>Corporate Social Responsibility</p>
-			</div>
-			<div class="word word2">
-				<p>Workshops</p>
-			</div>
-			<div class="word word3">
-				<p>Social Good</p>
-			</div>
-		</div>
-	</section>
-	
-	<section class="projects container">
-		<h2 class="sectionTitle">LATEST PROJECTS</h2>
-		<div class="monkey"></div>
-		<!-- <div class="videoBox">
-			<div class="video">
-				<iframe width="100%" height="100%" id="video" src="https://www.youtube.com/embed/Ysyey8vwwHY" frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="playBtn">WATCH VIDEO</div>
-			<div class="monkey"></div>
-		</div>
-		<div class="bullets">
-			<div class="bullet"></div>
-			<div class="bullet"></div>
-			<div class="bullet"></div>
-			<div class="bullet"></div>
-		</div> -->
+	<?php include('include/projects.php'); ?>	
 
-		<div class="container">
-			
-			<article class="latestBig">
-				<div class="videoBox">
-					<div class="video">
-						<iframe width="100%" height="100%" id="video" src="https://www.youtube.com/embed/Ysyey8vwwHY" frameborder="0" allowfullscreen></iframe>
-						<div class="playBtn">WATCH VIDEO</div>
-					</div>
-					<p class="articleTitle">The Streetlight Project</p>
-					<p class="articleDescription">The streetlight project was idealised along with our partners at the Gold Coast Project for Homeless Youth.</p>
-					<!--  -->
-				</div>
-			</article>
-			<article class="latestBig">
-				<div class="videoBox">
-					<div class="video">
-						<iframe width="100%" height="100%" id="video" src="https://www.youtube.com/embed/Ysyey8vwwHY" frameborder="0" allowfullscreen></iframe>
-						<div class="playBtn">WATCH VIDEO</div>
-					</div>
-					<p class="articleTitle">OLA PEPPA</p>
-					<p class="articleDescription">That's a title</p>
-				</div>
-			</article>
-
-		</div>
-
-
-	</section>
-
-	<section class="contact">
-		<div class="container">
-			<h2 class="sectionTitle">LET'S WORK TOGETHER</h2>
-			<div class="formContainer">
-				<div class="llamaContainer">
-					<div class="llama"></div>
-					<div class="globe"></div>
-					<div class="stripes"></div>
-				</div>
-				<form method="post" action="">
-					<div class="inputContainer">
-						<input type="text" class="input required" name="name" id="name" required>
-						<label for="name">Your name</label>
-						<div class="bottomBar"></div>
-					</div>
-					<div class="inputContainer">
-						<input type="email" class="input required" name="email" id="email" required>
-						<label for="email">Your email</label>
-						<div class="bottomBar"></div>
-					</div>
-					<div class="inputContainer">
-						<input type="number" class="input" name="phone" id="phone" required>
-						<label for="phone">Phone</label>
-						<div class="bottomBar"></div>
-					</div>
-					<div class="inputContainer">
-						<textarea class="textarea required" name="message" id="message" required></textarea>
-						<label for="message">Message</label>
-						<div class="bottomBar"></div>
-					</div>
-					<input type="submit" value="SEND" class="submit">
-				</form>
-			</div>
-		</div>
-		
-	</section>
-
-	<footer class="footer">
-		<div class="container">
-			<p class="copyright">Copyright 2017 Way360Group</p>
-			<div class="meerkatsBox">
-				<div class="meerkats"></div>
-			</div>
-			<div class="logo"></div>
-			<div class="socialMedias">
-				<a href="http://www.facebook.com/Way360Group" target="_blank" class="socialBtn facebook"></a>
-				<a href="http://www.instagram.com/Way360Group" target="_blank" class="socialBtn instagram"></a>
-			</div>
-		</div>
-	</footer>
+	<?php include('include/footer.php'); ?>	
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>

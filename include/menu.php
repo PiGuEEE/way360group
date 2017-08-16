@@ -2,10 +2,10 @@
 	<div class="logo"></div>
 	<nav class="menu">
 		<div class="menuBtnBox">
-			<a href="#" class="menuBtn" title="About the Way360 Group"><p>ABOUT US</p></a>
+			<a href="about-us.php" class="menuBtn" title="About the Way360 Group"><p>ABOUT US</p></a>
 		</div>
 		<div class="menuBtnBox">
-			<a href="#" class="menuBtn" title="What is Corporate Social Responsibility?"><p>WHAT IS CSR?</p></a>
+			<a href="what-is-corporate-social-responsibility.php" class="menuBtn" title="What is Corporate Social Responsibility?"><p>WHAT IS CSR?</p></a>
 		</div>
 		<div class="menuBtnBox">
 			<a href="#" class="menuBtn" title="Latest Projects"><p>LATEST PROJECTS</p></a>

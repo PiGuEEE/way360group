@@ -95,7 +95,7 @@ $(document).ready(function() {
 		$(window).scroll(function(){
 
 			var height1 = $('.firstSection').height();
-			var height2 = $('.wordsGame').height() + 120;
+			var height2 = $('.secondSection').height() + 120;
 			var height3 = height2 + height1;
 
 			console.log(height3);

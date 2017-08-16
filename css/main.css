@@ -31,9 +31,13 @@ span {
   padding: 0;
   color: inherit;
   text-decoration: none;
-  font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   color: #666;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-image: url(../svg/hideout.svg);
+  background-size: 2%;
 }
 h1,
 h2,
@@ -258,11 +262,6 @@ input[type=submit] {
   100% {
     background-color: #B20099;
   }
-}
-body {
-  font-family: 'Noto Sans', sans-serif;
-  background-image: url(../svg/hideout.svg);
-  background-size: 2%;
 }
 .headerBtn {
   height: 50px;
@@ -622,7 +621,7 @@ body {
   display: block;
   clear: both;
 }
-.firstSection {
+.homeSection {
   height: 100%;
   width: 100%;
   position: relative;
@@ -638,7 +637,7 @@ body {
   padding-right: 30px;
   margin-bottom: 40px;
 }
-.firstSection .logo {
+.homeSection .logo {
   height: 52px;
   width: 70px;
   position: absolute;
@@ -650,7 +649,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.firstSection .titlesBox {
+.homeSection .titlesBox {
   height: 150px;
   width: 100%;
   position: relative;
@@ -658,7 +657,7 @@ body {
   z-index: 15;
   text-align: center;
 }
-.firstSection .titlesBox .weAreBox {
+.homeSection .titlesBox .weAreBox {
   height: auto;
   width: 100%;
   -webkit-transition: all 1s ease-in-out;
@@ -682,12 +681,12 @@ body {
   top: 0;
   text-align: center;
 }
-.firstSection .titlesBox .weAreBox:after {
+.homeSection .titlesBox .weAreBox:after {
   content: " ";
   display: block;
   clear: both;
 }
-.firstSection .titlesBox .weAreBox .weAre {
+.homeSection .titlesBox .weAreBox .weAre {
   position: relative;
   font-family: 'regloregular';
   filter: blur(0);
@@ -709,7 +708,7 @@ body {
   margin-bottom: 10px;
   z-index: 5;
 }
-.firstSection .titlesBox .transparent {
+.homeSection .titlesBox .transparent {
   -webkit-opacity: 0;
   -khtml-opacity: 0;
   -moz-opacity: 0;
@@ -726,12 +725,12 @@ body {
   -ms-transform: scale(1.15);
   transform: scale(1.15);
 }
-.firstSection .titlesBox .space {
+.homeSection .titlesBox .space {
   height: 20px;
   width: 30px;
   display: inline-table;
 }
-.firstSection .titlesBox .blurred {
+.homeSection .titlesBox .blurred {
   -webkit-transition: all 0.9s ease-in-out;
   -moz-transition: all 0.9s ease-in-out;
   -o-transition: all 0.9s ease-in-out;
@@ -750,7 +749,7 @@ body {
   animation: blurout 1.2s ease-in !important;
   -webkit-animation-fill-mode: forwards !important;
 }
-.firstSection .titlesBox .weAreHere {
+.homeSection .titlesBox .weAreHere {
   height: auto;
   width: 100%;
   font-family: 'Noto Sans', sans-serif;
@@ -776,7 +775,7 @@ body {
   margin-bottom: 30px;
   color: #111;
 }
-.firstSection .titlesBox .transparent2 {
+.homeSection .titlesBox .transparent2 {
   -webkit-opacity: 0;
   -khtml-opacity: 0;
   -moz-opacity: 0;
@@ -788,11 +787,11 @@ body {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-.firstSection .titlesBox .socialIcons {
+.homeSection .titlesBox .socialIcons {
   height: 40px;
   width: 100%;
 }
-.firstSection .titlesBox .socialIcons .socialBtn {
+.homeSection .titlesBox .socialIcons .socialBtn {
   height: 34px;
   width: 34px;
   float: left;
@@ -805,8 +804,8 @@ body {
   background-repeat: no-repeat;
   margin-right: 20px;
 }
-.firstSection .titlesBox .socialIcons .socialBtn:hover,
-.firstSection .titlesBox .socialIcons .socialBtn:active {
+.homeSection .titlesBox .socialIcons .socialBtn:hover,
+.homeSection .titlesBox .socialIcons .socialBtn:active {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -o-transform: scale(0.9);
@@ -817,18 +816,18 @@ body {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.firstSection .titlesBox .socialIcons .facebook {
+.homeSection .titlesBox .socialIcons .facebook {
   background-image: url(../svg/facebook-way360.svg);
 }
-.firstSection .titlesBox .socialIcons .instagram {
+.homeSection .titlesBox .socialIcons .instagram {
   background-image: url(../svg/instagram-way360.svg);
 }
-.firstSection .videoBox {
+.homeSection .videoBox {
   height: 460px;
   width: 100%;
   position: relative;
 }
-.firstSection .videoBox .video {
+.homeSection .videoBox .video {
   height: 350px;
   width: 60%;
   position: absolute;
@@ -847,7 +846,7 @@ body {
   margin: 0 auto;
   z-index: 1;
 }
-.firstSection .videoBox .video:before {
+.homeSection .videoBox .video:before {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -858,8 +857,8 @@ body {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-.firstSection .videoBox .video:hover,
-.firstSection .videoBox .video:active {
+.homeSection .videoBox .video:hover,
+.homeSection .videoBox .video:active {
   height: 360px;
   width: 63%;
   -webkit-transition: all 0.5s ease-in-out;
@@ -873,15 +872,15 @@ body {
   zoom: 1;
   background-size: 115%;
 }
-.firstSection .videoBox .video:hover:before,
-.firstSection .videoBox .video:active:before {
+.homeSection .videoBox .video:hover:before,
+.homeSection .videoBox .video:active:before {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   background-color: rgba(255, 255, 255, 0.85);
 }
-.firstSection .videoBox .videoScaled {
+.homeSection .videoBox .videoScaled {
   height: 420px;
   width: 75%;
   -webkit-transition: all 0.6s ease-in-out;
@@ -890,7 +889,7 @@ body {
   transition: all 0.6s ease-in-out;
   top: 50px;
 }
-.firstSection .videoBox .videoScaled:before {
+.homeSection .videoBox .videoScaled:before {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -898,20 +897,20 @@ body {
   pointer-events: none;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.firstSection .videoBox .videoScaled:hover,
-.firstSection .videoBox .videoScaled:active {
+.homeSection .videoBox .videoScaled:hover,
+.homeSection .videoBox .videoScaled:active {
   height: 420px;
   width: 75%;
 }
-.firstSection .videoBox .videoScaled:hover:before,
-.firstSection .videoBox .videoScaled:active:before {
+.homeSection .videoBox .videoScaled:hover:before,
+.homeSection .videoBox .videoScaled:active:before {
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   background-color: rgba(0, 0, 0, 0);
 }
-.firstSection .videoBox .playBtn {
+.homeSection .videoBox .playBtn {
   height: 35px;
   width: 165px;
   position: absolute;
@@ -939,7 +938,7 @@ body {
   background-size: 10%;
   background-repeat: no-repeat;
 }
-.firstSection .videoBox .playBtnShadow {
+.homeSection .videoBox .playBtnShadow {
   -webkit-box-shadow: 0px 5px 30px 6px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 5px 30px 6px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 5px 30px 6px rgba(0, 0, 0, 0.25);
@@ -950,7 +949,7 @@ body {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.firstSection .meerkatsBox {
+.homeSection .meerkatsBox {
   height: 500px;
   width: 310px;
   position: absolute;
@@ -963,7 +962,7 @@ body {
   top: -50px;
   margin-left: -155px;
 }
-.firstSection .meerkatsBox .meerkats {
+.homeSection .meerkatsBox .meerkats {
   height: 360px;
   width: 280px;
   position: absolute;
