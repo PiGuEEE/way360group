@@ -4,7 +4,7 @@
 	<?php include('include/head.php'); ?>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/csr.css">
+	<link rel="stylesheet" type="text/css" href="css/latest-projects.css">
 </head>
 <body>
 	<!-- <header class="header">
@@ -26,34 +26,48 @@
 
 	<?php include('include/menu.php'); ?>
 
-	<section class="csr firstSection">
+	<section class="latest firstSection">
 		<div class="titlesBox">
 			<div class="weAreBox">
-				<h1 class="weAre">Corporate Social Responsibility</h1>
+				<h1 class="weAre">Latest Projects</h1>
 			</div>
-			<h2 class="weAreHere">The heck is that?</h2>
+			<h2 class="weAreHere">Have a look at what we've been doing</h2>
 		</div>
-		<div class="meerkatsBox">
-			<div class="meerkats"></div>
-			<div class="globe"></div>
-			<div class="stripes"></div>
+		<div class="monkey"></div>
+		<div class="projects container">
+			<article class="latestBig">
+				<div class="videoBox">
+					<div class="video">
+						<iframe width="100%" height="100%" id="video" src="https://www.youtube.com/embed/Ysyey8vwwHY" frameborder="0" allowfullscreen></iframe>
+						<div class="playBtn">WATCH VIDEO</div>
+					</div>
+					<p class="articleTitle">The Streetlights Project</p>
+					<p class="articleDescription">The streetlights project was idealised along with our partners at the Gold Coast Project for Homeless Youth.</p>
+					<!--  -->
+				</div>
+			</article>
+			<article class="latestBig">
+				<div class="videoBox">
+					<div class="video">
+						<iframe width="100%" height="100%" id="video" src="https://www.youtube.com/embed/Ysyey8vwwHY" frameborder="0" allowfullscreen></iframe>
+						<div class="playBtn">WATCH VIDEO</div>
+					</div>
+					<p class="articleTitle">Old is Cool - Music Fest</p>
+					<p class="articleDescription">The music competition in an aged care where the residents judge and run the show!</p>
+				</div>
+			</article>
 		</div>
 	</section>
 
-	
 	<section class="csrSecond secondSection">
 		<div class="aboutText">
-			<p>We are entrepreneurs, researchers, designers, musicians, educators, and so on. We have a broad diversity of backgrounds. And as a result, a very interesting mix of experiences, cultures and the most creative ideas.</p>
-			<p>A network of people who wants to see the change. A group that decided to use all its skills to build a better world. But in a way where everyone wins. A way we like to call the way360.</p>
-			<h3>Our Ways</h3>
+			<h3>Idea to execution</h3>
 			<p>We are passionate for what we do. The strategic entrepreneur way of thinking geared to build a better world through an innovative methodology.</p>
 			<p>The group operates in the area of Cause Marketing, planning, developing and executing projects and events with two main goals: generating a real social impact and reaching the objectives of the social investing companies.</p>
 			<p>The results are priceless. Thus we create a meaningful brand value for our clients and a return for philanthropic, social and environmental commitments.</p>
 		</div>
 	</section>
 	
-	<?php include('include/projects.php'); ?>	
-
 	<?php include('include/footer.php'); ?>	
 
 	<script type="text/javascript" src="js/jquery.js"></script>

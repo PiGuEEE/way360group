@@ -286,8 +286,8 @@ input[type=submit] {
     background-color: #EFE633;
   }
 }
-.aboutUs {
-  height: 500px;
+.contact {
+  height: auto;
   width: 100%;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -300,19 +300,19 @@ input[type=submit] {
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 40px;
-  background-image: url('../img/way360-group-about-us.jpg');
   background-size: cover;
   background-position: 50% 50%;
 }
-.aboutUs .titlesBox {
+.contact .titlesBox {
   height: 150px;
   width: 100%;
   position: relative;
-  top: 270px;
+  top: 220px;
+  margin-bottom: 220px;
   z-index: 15;
   text-align: center;
 }
-.aboutUs .titlesBox .weAreBox {
+.contact .titlesBox .weAreBox {
   height: auto;
   width: 100%;
   -webkit-transition: all 1s ease-in-out;
@@ -336,14 +336,15 @@ input[type=submit] {
   top: 0;
   text-align: center;
 }
-.aboutUs .titlesBox .weAreBox:after {
+.contact .titlesBox .weAreBox:after {
   content: " ";
   display: block;
   clear: both;
 }
-.aboutUs .titlesBox .weAreBox .weAre {
+.contact .titlesBox .weAreBox .weAre {
   height: auto;
   width: 100%;
+  text-shadow: 0 1px 12px #ffffff;
   position: relative;
   font-family: 'regloregular';
   filter: blur(0);
@@ -361,11 +362,11 @@ input[type=submit] {
   display: inline-table;
   text-align: center;
   font-size: 6.2em;
-  color: #FFF;
+  color: #111;
   margin-bottom: 10px;
   z-index: 5;
 }
-.aboutUs .titlesBox .weAreHere {
+.contact .titlesBox .weAreHere {
   height: auto;
   width: 100%;
   font-family: 'Noto Sans', sans-serif;
@@ -389,47 +390,218 @@ input[type=submit] {
   font-size: 1.3em;
   font-weight: lighter;
   margin-bottom: 30px;
-  color: #DDD;
+  color: #999;
 }
-.aboutUs .meerkatsBox {
-  height: 500px;
-  width: 310px;
+.contact .monkey {
+  height: 327px;
+  width: 212px;
   position: absolute;
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -o-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -o-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  background-image: url(../img/monkey.png);
   left: 50%;
-  top: -50px;
-  margin-left: -155px;
+  top: 30px;
+  margin-left: -106px;
 }
-.aboutUs .meerkatsBox .meerkats {
-  height: 360px;
-  width: 280px;
+.contact .formContainer {
+  height: auto;
+  width: 450px;
+  margin-left: 250px;
+  position: relative;
+}
+.contact .formContainer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.contact .formContainer .llamaContainer {
+  height: 345px;
+  width: 201px;
   position: absolute;
-  z-index: 9;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: url(../img/meerkats.png);
-  background-size: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  left: -350px;
 }
-.aboutSecond {
+.contact .formContainer .llamaContainer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.contact .formContainer .llamaContainer .llama {
+  height: 345px;
+  width: 201px;
+  position: absolute;
+  background-image: url(../img/llama.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 9;
+}
+.contact .formContainer .llamaContainer .globe {
+  height: 230px;
+  width: 230px;
+  bottom: -90px;
+  z-index: 1;
+}
+.contact .formContainer .llamaContainer .stripes {
+  height: 230px;
+  width: 230px;
+  bottom: -90px;
+  z-index: 1;
+}
+.contact .formContainer .inputContainer {
+  position: relative;
+  margin-bottom: 38px;
+}
+.contact .formContainer .inputContainer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.contact .formContainer .inputContainer label {
+  position: absolute;
+  font-family: 'regloregular';
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  top: 0px;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+.contact .formContainer .inputContainer .bottomBar {
+  height: 4px;
+  width: 0%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: -2px;
+}
+.contact .formContainer .inputContainer .input {
+  height: 40px;
+  width: 100%;
+  font-family: 'regloregular';
+  font-size: 1.8em;
+  border: 0;
+  border-bottom: 3px solid #111;
+  background: none;
+  padding: 0;
+  outline: none;
+}
+.contact .formContainer .inputContainer .input:focus ~ label,
+.contact .formContainer .inputContainer .input:valid ~ label {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  top: -20px;
+  font-size: 1em;
+  color: #528FA8;
+}
+.contact .formContainer .inputContainer .input:empty ~ label {
+  position: absolute;
+  font-family: 'regloregular';
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  color: #666;
+  top: 0px;
+  font-size: 1.5em;
+  pointer-events: none;
+}
+.contact .formContainer .inputContainer .input:invalid ~ label {
+  display: none;
+}
+.contact .formContainer .inputContainer .textarea {
+  height: 130px;
+  width: 100%;
+  font-family: 'regloregular';
+  font-size: 2em;
+  border: 0;
+  padding: 0;
+  border-bottom: 4px solid #111;
+  background: none;
+  outline: none;
+  resize: none;
+}
+.contact .formContainer .inputContainer .textarea:focus ~ .bottomBar {
+  height: 5px;
+  width: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.03);
+  behavior: url(../htc/pie.htc);
+  zoom: 1;
+  bottom: 3px;
+  background-color: #7AD3E8;
+}
+.contact .formContainer .inputContainer .textarea:focus ~ label,
+.contact .formContainer .inputContainer .textarea:valid ~ label {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  top: -20px;
+  font-size: 1em;
+  color: #528FA8;
+}
+.contact .formContainer .inputContainer .input:focus ~ .bottomBar {
+  height: 5px;
+  width: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.03);
+  behavior: url(../htc/pie.htc);
+  zoom: 1;
+  bottom: -2px;
+  background-color: #7AD3E8;
+}
+.contact .formContainer .inputContainer .input:focus ~ label,
+.contact .formContainer .inputContainer .input:valid ~ label {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  top: -20px;
+  font-size: 1em;
+  color: #528FA8;
+}
+.contact .formContainer .submit {
+  height: 40px;
+  width: 130px;
+  font-family: 'regloregular';
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #EFE633;
+  text-align: center;
+  font-size: 1.5em;
+}
+.csrSecond {
   position: relative;
   z-index: 99;
   margin-top: -20px;
   padding-bottom: 90px;
   background-color: #111;
 }
-.aboutSecond:after {
+.csrSecond:after {
   content: " ";
   display: block;
   clear: both;
 }
-.aboutSecond:before {
+.csrSecond:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -441,7 +613,7 @@ input[type=submit] {
   transform-origin: left top;
   transform: skewY(3deg);
 }
-.aboutSecond:after {
+.csrSecond:after {
   content: '';
   width: 100%;
   height: 100%;
@@ -452,7 +624,7 @@ input[type=submit] {
   transform-origin: left bottom;
   transform: skewY(3deg);
 }
-.aboutSecond .aboutText {
+.csrSecond .aboutText {
   height: auto;
   width: 80%;
   margin: 0 auto;
@@ -460,19 +632,19 @@ input[type=submit] {
   font-size: 1.3em;
   line-height: 1.7em;
 }
-.aboutSecond .aboutText:after {
+.csrSecond .aboutText:after {
   content: " ";
   display: block;
   clear: both;
 }
-.aboutSecond .aboutText h3 {
+.csrSecond .aboutText h3 {
   font-size: 2.5em;
   color: #FFF;
   text-align: center;
   margin-top: 90px;
   margin-bottom: 50px;
 }
-.aboutSecond .aboutText p {
+.csrSecond .aboutText p {
   color: #FFF;
   margin-top: 30px;
   margin-bottom: 30px;

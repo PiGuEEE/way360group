@@ -160,3 +160,26 @@
     background-color: #B20099;
   }
 }
+@keyframes playbtnbg {
+  0% {
+    background-color: #EFE633;
+  }
+  28% {
+    background-color: #EFE633;
+  }
+  35% {
+    background-color: #B20099;
+  }
+  62% {
+    background-color: #B20099;
+  }
+  70% {
+    background-color: #60A0B6;
+  }
+  92% {
+    background-color: #60A0B6;
+  }
+  100% {
+    background-color: #EFE633;
+  }
+}

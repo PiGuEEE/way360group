@@ -286,8 +286,8 @@ input[type=submit] {
     background-color: #EFE633;
   }
 }
-.aboutUs {
-  height: 500px;
+.latest {
+  height: auto;
   width: 100%;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -300,19 +300,19 @@ input[type=submit] {
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 40px;
-  background-image: url('../img/way360-group-about-us.jpg');
   background-size: cover;
   background-position: 50% 50%;
 }
-.aboutUs .titlesBox {
+.latest .titlesBox {
   height: 150px;
   width: 100%;
   position: relative;
-  top: 270px;
+  top: 220px;
+  margin-bottom: 220px;
   z-index: 15;
   text-align: center;
 }
-.aboutUs .titlesBox .weAreBox {
+.latest .titlesBox .weAreBox {
   height: auto;
   width: 100%;
   -webkit-transition: all 1s ease-in-out;
@@ -336,14 +336,15 @@ input[type=submit] {
   top: 0;
   text-align: center;
 }
-.aboutUs .titlesBox .weAreBox:after {
+.latest .titlesBox .weAreBox:after {
   content: " ";
   display: block;
   clear: both;
 }
-.aboutUs .titlesBox .weAreBox .weAre {
+.latest .titlesBox .weAreBox .weAre {
   height: auto;
   width: 100%;
+  text-shadow: 0 1px 12px #ffffff;
   position: relative;
   font-family: 'regloregular';
   filter: blur(0);
@@ -361,11 +362,11 @@ input[type=submit] {
   display: inline-table;
   text-align: center;
   font-size: 6.2em;
-  color: #FFF;
+  color: #111;
   margin-bottom: 10px;
   z-index: 5;
 }
-.aboutUs .titlesBox .weAreHere {
+.latest .titlesBox .weAreHere {
   height: auto;
   width: 100%;
   font-family: 'Noto Sans', sans-serif;
@@ -389,47 +390,69 @@ input[type=submit] {
   font-size: 1.3em;
   font-weight: lighter;
   margin-bottom: 30px;
-  color: #DDD;
+  color: #999;
 }
-.aboutUs .meerkatsBox {
-  height: 500px;
-  width: 310px;
+.latest .monkey {
+  height: 327px;
+  width: 212px;
   position: absolute;
-  -webkit-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -o-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -o-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  background-image: url(../img/monkey.png);
   left: 50%;
-  top: -50px;
-  margin-left: -155px;
+  top: 30px;
+  margin-left: -106px;
 }
-.aboutUs .meerkatsBox .meerkats {
-  height: 360px;
-  width: 280px;
+.latest .latestBig {
+  height: auto;
+  width: 80%;
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+.latest .latestBig:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.latest .latestBig .videoBox:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.latest .latestBig .videoBox .video {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.latest .latestBig .videoBox .video .playBtn {
+  top: 260px;
+}
+.latest .latestBig .videoBox .articleTitle {
+  height: auto;
+  width: 100%;
   position: absolute;
-  z-index: 9;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: url(../img/meerkats.png);
-  background-size: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  font-size: 4.6em;
+  top: 100px;
+  color: #FFF;
+  z-index: 999;
 }
-.aboutSecond {
+.csrSecond {
   position: relative;
   z-index: 99;
   margin-top: -20px;
   padding-bottom: 90px;
   background-color: #111;
 }
-.aboutSecond:after {
+.csrSecond:after {
   content: " ";
   display: block;
   clear: both;
 }
-.aboutSecond:before {
+.csrSecond:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -441,7 +464,7 @@ input[type=submit] {
   transform-origin: left top;
   transform: skewY(3deg);
 }
-.aboutSecond:after {
+.csrSecond:after {
   content: '';
   width: 100%;
   height: 100%;
@@ -452,7 +475,7 @@ input[type=submit] {
   transform-origin: left bottom;
   transform: skewY(3deg);
 }
-.aboutSecond .aboutText {
+.csrSecond .aboutText {
   height: auto;
   width: 80%;
   margin: 0 auto;
@@ -460,19 +483,19 @@ input[type=submit] {
   font-size: 1.3em;
   line-height: 1.7em;
 }
-.aboutSecond .aboutText:after {
+.csrSecond .aboutText:after {
   content: " ";
   display: block;
   clear: both;
 }
-.aboutSecond .aboutText h3 {
+.csrSecond .aboutText h3 {
   font-size: 2.5em;
   color: #FFF;
   text-align: center;
   margin-top: 90px;
   margin-bottom: 50px;
 }
-.aboutSecond .aboutText p {
+.csrSecond .aboutText p {
   color: #FFF;
   margin-top: 30px;
   margin-bottom: 30px;

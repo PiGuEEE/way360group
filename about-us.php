@@ -31,7 +31,7 @@
 			<div class="weAreBox">
 				<h1 class="weAre">About Us</h1>
 			</div>
-			<h2 class="weAreHere">And we’re here to help your business get more social.</h2>
+			<h2 class="weAreHere">A network of people who wants to see and be the change.</h2>
 		</div>
 		<div class="meerkatsBox">
 			<div class="meerkats"></div>

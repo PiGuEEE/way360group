@@ -1,0 +1,149 @@
+@import 'mixins.less';
+@import 'reset.less';
+@import 'animations.less';
+
+.latest{
+	.dim(100%);
+	.box-sizing();
+	.transition(.3s);
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 40px;	
+	background-size: cover;
+	background-position: 50% 50%;
+	.titlesBox{
+		.dim(100%, 150px);
+		.relative();
+		top: 220px;
+		margin-bottom: 220px;
+		z-index: 15;
+		text-align: center;
+		.weAreBox{
+			.dim(100%);
+			.clr();
+			.transition(1s);
+			.opacity(1);
+			.scale(1);
+			.blur(0);
+			.relative();
+			top: 0;
+			text-align: center;
+			.weAre{
+				.dim(100%);
+				.tshadow(#FFF);
+				.relative();
+				.reglo();
+				.blur(0);
+				.transition(1s);
+				.opacity(1);
+				display: inline-table;
+				text-align: center;
+				font-size: 6.2em;
+				color: #111;
+				margin-bottom: 10px;
+				z-index: 5;
+			}
+		}
+		.weAreHere{
+			.dim(100%);
+			.noto();
+			.relative();
+			.transition(.3s);
+			.opacity(1);
+			.scale(1);
+			text-align: center;
+			font-size: 1.3em;
+			font-weight: lighter;
+			margin-bottom: 30px;
+			color: #999;
+		}
+	}
+	.monkey{
+		.dim(212px, 327px);
+		.absolute();
+		.scale(.85);
+		background-image: url(../img/monkey.png);
+		left: 50%;
+		top: 30px;
+		margin-left: -106px;
+	}
+	.latestBig{
+		.dim(80%);
+		.clr();
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 150px;
+		.videoBox{
+			.clr();
+			.video{
+				.dim(100%, 400px);
+				margin-bottom: 40px;
+				.playBtn{
+					top: 260px;
+				}
+			}
+			.articleTitle{
+				.dim(100%);
+				.absolute();
+				font-size: 4.6em;
+				top: 100px;
+				color: #FFF;
+				z-index: 999;
+			}
+		}
+	}
+}
+.csrSecond{
+	.relative();
+	.clr();
+	z-index: 99;
+	margin-top: -20px;
+	padding-bottom: 90px;
+	background-color: #111;
+	&:before{
+	  content: '';
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  background: inherit;
+	  z-index: -1;
+	  top: -100px;
+	  left: 0;
+	  transform-origin: left top;
+	  transform: skewY(3deg);
+	}
+	&:after{
+	  content: '';
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  background: inherit;
+	  z-index: -1;
+	  bottom: 0;
+	  transform-origin: left bottom;
+	  transform: skewY(3deg);
+	}
+	.aboutText{
+		.dim(80%);
+		.clr();
+		margin: 0 auto;
+		max-width: 600px;
+		font-size: 1.3em;
+		line-height: 1.7em;
+		h3{
+			font-size: 2.5em;
+			color: #FFF;
+			text-align: center;
+			margin-top: 90px;
+			margin-bottom: 50px;
+		}
+		p{
+			color: #FFF;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+	}
+}
+
+@import 'media-queries.less';
