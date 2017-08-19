@@ -102,13 +102,15 @@ $(document).ready(function() {
 
 			if ($(window).scrollTop() >= height1) {
 				console.log('OLA PEPA');
-				$(".headerBtn .line").css("background-color", "#FFF" );
+				$(".headerBtn .line").addClass('whiteLines');
+				//$(".headerBtn .line").css("background-color", "#FFF" );
 			} else {
-				$(".headerBtn .line").css("background-color", "#111" );	
+				$(".headerBtn .line").removeClass('whiteLines');
+				$(".headerBtn .line").addClass('darkLines');
 			}
 			if ($(window).scrollTop() >= height3) {
-				console.log('entrei');
-				$(".headerBtn .line").css("background-color", "#111" );
+				$(".headerBtn .line").removeClass('whiteLines');
+				$(".headerBtn .line").addClass('darkLines');
 			};
 
 		});

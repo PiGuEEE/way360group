@@ -325,6 +325,12 @@ input[type=submit] {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.headerBtn .whiteLines {
+  background-color: #FFF !important;
+}
+.headerBtn .darkLines {
+  background-color: #111;
+}
 .headerBtn:hover .line2,
 .headerBtn:active .line2,
 .headerBtn:hover .line3,

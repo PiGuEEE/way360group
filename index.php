@@ -29,35 +29,9 @@
 		<div class="titlesBox">
 			<div class="weAreBox">
 				<h1 class="weAre">We are the Way360 Group</h1>
-			<!-- 
-				<span class="weAre">W</span>
-				<span class="weAre">e</span>
-				<span class="space"></span>
-				<span class="weAre">a</span>
-				<span class="weAre">r</span>
-				<span class="weAre">e</span>
-				<span class="space"></span>
-				<span class="weAre">t</span>
-				<span class="weAre">h</span>
-				<span class="weAre">e</span>
-				<span class="space"></span>
-				<span class="weAre">W</span>
-				<span class="weAre">a</span>
-				<span class="weAre">y</span>
-				<span class="weAre">3</span>
-				<span class="weAre">6</span>
-				<span class="weAre">0</span>
-				<span class="space"></span>
-				<span class="weAre">G</span>
-				<span class="weAre">r</span>
-				<span class="weAre">o</span>
-				<span class="weAre">u</span>
-				<span class="weAre">p</span>
-			-->
 			</div>
 			<h2 class="weAreHere">And we’re here to help your business get more social.</h2>
 		</div>
-		<!-- <div class="video" style="background-image: url('img/maxresdefault.png');" > -->
 		<div class="videoBox">
 			<div class="video">
 				<iframe width="100%" height="100%" id="video" src="https://www.youtube.com/embed/Ysyey8vwwHY" frameborder="0" allowfullscreen></iframe>

@@ -7,16 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/csr.css">
 </head>
 <body>
-	<!-- <header class="header">
-		<div class="logo"></div>
-		<nav class="menu">
-			<a href="#" class="menuBtn" title="About the Way360 Group">ABOUT US</a>
-			<a href="#" class="menuBtn" title="What is Corporate Social Responsibility?">WHAT IS CSR?</a>
-			<a href="#" class="menuBtn" title="Latest Projects">LATEST PROJECTS</a>
-			<a href="#" class="menuBtn" title="Contact us">CONTACT</a>
-		</nav>
-	</header> -->
-
 	<div class="headerBtn">
 		<div class="logo"></div>
 		<div class="line line1"></div>
@@ -43,8 +33,8 @@
 	
 	<section class="csrSecond secondSection">
 		<div class="aboutText">
-			<p>We are entrepreneurs, researchers, designers, musicians, educators, and so on. We have a broad diversity of backgrounds. And as a result, a very interesting mix of experiences, cultures and the most creative ideas.</p>
-			<p>A network of people who wants to see the change. A group that decided to use all its skills to build a better world. But in a way where everyone wins. A way we like to call the way360.</p>
+			<p>Corporate social responsibility, often abbreviated "CSR," is a corporation's  initiatives to assess and take responsibility for the company's effects on environmental and social wellbeing. The term generally applies to efforts that go beyond what may be required by regulators or environmental protection groups.</p>
+			<p>CSR may also be referred to as "corporate citizenship" and can involve incurring short-term costs that do not provide an immediate financial benefit to the company, but instead promote positive social and environmental change.</p>
 			<h3>Our Ways</h3>
 			<p>We are passionate for what we do. The strategic entrepreneur way of thinking geared to build a better world through an innovative methodology.</p>
 			<p>The group operates in the area of Cause Marketing, planning, developing and executing projects and events with two main goals: generating a real social impact and reaching the objectives of the social investing companies.</p>

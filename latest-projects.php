@@ -7,15 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/latest-projects.css">
 </head>
 <body>
-	<!-- <header class="header">
-		<div class="logo"></div>
-		<nav class="menu">
-			<a href="#" class="menuBtn" title="About the Way360 Group">ABOUT US</a>
-			<a href="#" class="menuBtn" title="What is Corporate Social Responsibility?">WHAT IS CSR?</a>
-			<a href="#" class="menuBtn" title="Latest Projects">LATEST PROJECTS</a>
-			<a href="#" class="menuBtn" title="Contact us">CONTACT</a>
-		</nav>
-	</header> -->
 
 	<div class="headerBtn">
 		<div class="logo"></div>

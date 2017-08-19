@@ -1,0 +1,12 @@
+Options FollowSymLinks
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule   ^contact/?$ contact.php 
+RewriteRule   ^what-is-social-corporate-responsibility/?$ contact.php 
+RewriteRule   ^about-us/?$ about-us.php 
+RewriteRule   ^latest-projects/?$ latest-projects.php 
